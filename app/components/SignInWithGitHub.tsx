@@ -7,7 +7,7 @@ import { signIn } from "next-auth/react"
 export default function SignInWithGitHub(){
     return (
         <Button onClick={() => signIn('github', {
-            callbackUrl:`${window.location.origin}`
+            callbackUrl:"https://style-omega.vercel.app/"
         })} className="mt-6" variant="secondary">
             Login with GitHub <Github className="w-4 h-4 ml-4" />
         </Button>
